@@ -1,5 +1,5 @@
 package com.driver;
-
+import java.lang.*;
 public class Email {
 
     private String emailId;
