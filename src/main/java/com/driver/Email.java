@@ -1,5 +1,5 @@
 package com.driver;
-import java.lang.*;
+
 public class Email {
 
     private String emailId;
@@ -36,7 +36,10 @@ public class Email {
             else spe=true;
         }
 
-        return upper && lower && dig && spe;
+        if(upper && lower && dig && spe){
+            return true;
+        }
+        return false;
     }
     public void changePassword(String oldPassword, String newPassword){
         //Change password only if the oldPassword is equal to current password and the new password meets all of the following:
